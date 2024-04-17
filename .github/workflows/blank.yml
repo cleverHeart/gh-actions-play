@@ -27,10 +27,10 @@ jobs:
         run: echo Hello, world!
 
       - name: Scriv Age
-        run: echo Scriv is $vars.SCRIV_AGE years old
+        run: echo Scriv is $SCRIV_AGE years old
 
       - name: Password
-        run: echo Password: $secrets.SCRIV_PASSWORD
+        run: echo Password is $SCRIV_PASSWORD
 
 
 
