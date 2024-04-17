@@ -35,8 +35,11 @@ jobs:
       - name: (1) Hello World
         run: echo Hello, world!
 
-      - name: (2) show variable
+      - name: (2) show User Variables
         run: echo Scriv is $SCRIV_AGE years old. $SCRIV_GENDER, $SCRIV_PASSWORD
+
+      - name: (3) show Org Variables
+        run: echo $CH_SECRET ... $CH_ABN
 
 
 
