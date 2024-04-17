@@ -4,6 +4,11 @@ name: CI
 
 # Controls when the workflow will run
 on:
+
+  env:
+    # Setting an environment variable with the value of a configuration variable
+    SCRIV_AGE: ${{ vars.SCRIV_AGE }}
+
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
