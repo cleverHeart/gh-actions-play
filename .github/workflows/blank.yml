@@ -17,6 +17,8 @@ env:
   SCRIV_AGE: ${{ vars.SCRIV_AGE }}
   SCRIV_GENDER: ${{ vars.SCRIV_GENDER }}
   SCRIV_PASSWORD: ${{ secrets.SCRIV_PASSWORD }}
+  CH_SECRET: ${{ secrets.CH_SECRET }}
+  CH_ABN: ${{ vars.CH_ABN }}
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
