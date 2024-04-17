@@ -29,7 +29,7 @@ jobs:
       - env:
           SCRIV_AGE: ${{ secrets.SCRIV_AGE }}
         run: |
-          example-command "$SCRIV_AGE"
+          echo Scriv is $SCRIV_AGE years old.
 
 
 
