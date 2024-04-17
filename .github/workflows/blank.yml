@@ -26,13 +26,10 @@ jobs:
       - name: (1) Hello World
         run: echo Hello, world!
 
-      - name: Scriv Age
-        run: echo Scriv is $SCRIV_AGE years old
-
-      - name: Password
-        run: echo Password is $SCRIV_PASSWORD
-
-
+      - env:
+          SCRIV_AGE: ${{ secrets.SCRIV_AGE }}
+        run: |
+          example-command "$SCRIV_AGE"
 
 
 
