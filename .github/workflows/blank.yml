@@ -15,6 +15,8 @@ on:
 env:
   # Setting an environment variable with the value of a configuration variable
   SCRIV_AGE: ${{ vars.SCRIV_AGE }}
+  SCRIV_GENDER: ${{ vars.SCRIV_GENDER }}
+  SCRIV_PASSWORD: ${{ secrets.SCRIV_PASSWORD }}
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,7 +34,7 @@ jobs:
         run: echo Hello, world!
 
       - name: (2) show variable
-        run: echo Scriv is $SCRIV_AGE years old.
+        run: echo Scriv is $SCRIV_AGE years old. $SCRIV_GENDER, $SCRIV_PASSWORD
 
 
 
